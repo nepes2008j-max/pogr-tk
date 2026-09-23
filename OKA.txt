@@ -1,0 +1,66 @@
+GOŞUNLARY OPERATIW DEMIR ÝOL ARKALY DAŞAMAGY GURAMAK
+Okuw diski — türkmen dilindäki nusgasy
+=====================================================
+
+AÇMAGYŇ IKI USULY
+-----------------
+1) DOLY IŞLEÝÄN GÖRNÜŞ (maslahat berilýär) — 2D/3D Flash modelleri hem işleýär:
+     Linux:   BASLAT.sh faýlyny işlediň  (terminalda:  ./BASLAT.sh)
+     Windows: BASLAT.bat faýlyna iki gezek basyň
+   Ýerli web-serwer işleýär we brauzer awtomat açylýar. Internet gerek däl.
+
+2) Ýönekeý görnüş — index.htm faýlyny göni brauzerde açmaly.
+   Ähli sahypalar we suratlar işleýär, ýöne 2D/3D modeller açylmaýar
+   (brauzerler file:// arkaly Flash emulýatoryny işletmeýär).
+
+2D/3D MODELLER
+--------------
+Asyl diskdäki 80 sany Flash (.swf) modeli häzirki brauzerlerde işlemeýärdi,
+sebäbi Flash 2021-nji ýylda ýapyldy. Diske «Ruffle» (açyk çeşmeli Flash
+emulýatory, 28 MB) goşuldy we ähli model salgylanmalary model.htm
+oýnadyjy sahypasyna gönükdirildi — modeller ýene işleýär.
+Bellik: modelleriň içindäki tekst heniz rus dilinde (aşakdaky 4-nji bende
+seret).
+
+TERJIME HAKYNDA
+---------------
+Diskiň ähli HTML sahypalarynyň görünýän teksti rus dilinden türkmen
+diline geçirildi (79 sahypa, 6 400-den gowrak tekst bölegi). Sahypalaryň
+bezegi, suratlary, çyzgylary, salgylanmalary we hereketlendirmeleri asyl
+görnüşinde saklandy. Faýllaryň kodlamasy windows-1251-den UTF-8-e
+geçirildi (türkmen harplary ä, ň, ö, ü, ý, ş, ç, ž üçin zerur).
+
+Gezelenç (nawigasiýa) düwmeleriniň ählisi — 166 düwme, 482 surat faýly —
+täzeden çyzyldy: asyl fonlary saklanyp, üstündäki tekst türkmen dilinde
+ýazyldy. Sahypanyň ýokarsyndaky «КАФЕДРА ВОЕННЫХ СООБЩЕНИЙ» ýazgyly
+nyşan hem «HARBY GATNAWLAR KAFEDRASY» diýlip täzelendi (gerbler
+degilmedi).
+
+Terminologiýa üçin esas: «Goşunlary demir ýol, suw, howa ulaglarynda
+daşamak boýunça DÜZGÜNLER» — Türkmenistanyň Goranmak ministriniň we
+Senagat we kommunikasiýa ministriniň 2019-njy ýylyň 3-nji iýulyndaky
+145/175-ö belgili bilelikdäki buýrugy bilen tassyklanan resmi resminama.
+
+5/1/1/11.htm sahypasynda rus dilindäki köne «Наставление по перевозкам
+войск» (1983 ý., № 180 buýruk) resminamasynyň ýerine ýokardaky resmi
+türkmen Düzgünleri ýerleşdirildi. Asyl rus nusgasy 5/1/1/11-ru.htm
+faýlynda saklanyp, sahypadan oňa salgylanma goýuldy.
+
+RUS DILINDE GALAN ZATLAR (bilkastlaýyn)
+---------------------------------------
+1. Formulalardaky aşaky belgiler: mлд, mкх, mпл, mпасс, mдоп, Нлд, Тпл
+   we ş.m. — bular ýanaşyk suratlardaky çyzgylarda şol görnüşde
+   çekilendir, üýtgedilse formula bilen surat gabat gelmez.
+2. Resmi resminama kodlary: ВО, КО, МО, П, ВО-ИНЭ/Т (ýük hatlarynda
+   ulanylýan bellikler) we Russiýanyň DÝM ministriniň goly.
+3. Faýl atlary we içerki salgylanmalar (meselem 1/Кухня.swf,
+   #Общие_положения) — üýtgedilse salgylanmalar işlemez.
+4. SURATLARYŇ WE ANIMASIÝALARYŇ IÇINDÄKI TEKST: 3 757 sany JPG/PNG
+   çyzgyda hem-de 7 sany SWF animasiýada tekst suratyň özüne çyzylandyr.
+   Olary terjime etmek üçin çyzgylary täzeden çekmek gerek — bu işde
+   olar asyl görnüşinde galdyryldy (gezelenç düwmeleri muňa girmeýär,
+   olar täzeden çyzyldy).
+5. «ВОСО» nyşany (harby gatnawlar gullugynyň gerbi) nyşan hökmünde
+   üýtgedilmedi.
+6. 5/1/2/ bukjasy («Wideomateriallar» bölümi) asyl diskde hem ýok —
+   şol bäş düwmäniň suraty we sahypalary asyl nusgada hem kem.

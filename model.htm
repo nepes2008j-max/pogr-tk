@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tk">
+<head>
+<meta charset="utf-8">
+<title>2D/3D model</title>
+<style>
+  html,body{margin:0;padding:0;height:100%;background:#0e3a3a;color:#fff;
+            font-family:Arial,Helvetica,sans-serif}
+  #bar{display:flex;align-items:center;gap:16px;box-sizing:border-box;
+       height:44px;padding:10px 16px;background:#0b2e2e;
+       border-bottom:1px solid #1d5c5c;font-size:14px}
+  #bar a{color:#9fe3e3;text-decoration:none}
+  #bar a:hover{text-decoration:underline}
+  #name{color:#cfeaea}
+  #stage{position:absolute;top:44px;left:0;right:0;bottom:0}
+  #err{padding:24px;font-size:15px;line-height:1.5;max-width:760px}
+  #err code{background:#062020;padding:2px 6px;border-radius:3px}
+</style>
+</head>
+<body>
+<div id="bar"><a href="#" onclick="history.back();return false;">&#9664; Yza</a><span id="name"></span></div>
+<div id="stage"></div>
+<div id="err" style="display:none">
+  <p><b>Model açylmady.</b></p>
+  <p>Flash modelleri diňe ýerli web-serwer arkaly açylanda işleýär.
+     Diskiň kök bukjasyndaky <code>BASLAT.sh</code> (Linux) ýa-da
+     <code>BASLAT.bat</code> (Windows) faýlyny işlediň — brauzer awtomat açylar
+     we ähli modeller işlär.</p>
+</div>
+<script src="ruffle/ruffle.js"></script>
+<script>
+(function () {
+  function qp(n) {
+    var m = new RegExp('[?&]' + n + '=([^&]*)').exec(window.location.search);
+    return m ? decodeURIComponent(m[1].replace(/\+/g, ' ')) : null;
+  }
+  var f = qp('f');
+  if (!f) { document.getElementById('name').textContent = ' — faýl görkezilmedi'; return; }
+  var short = f.split('/').pop();
+  document.getElementById('name').textContent = ' — ' + decodeURIComponent(short);
+  document.title = decodeURIComponent(short);
+
+  if (location.protocol === 'file:') {
+    document.getElementById('stage').style.display = 'none';
+    document.getElementById('err').style.display = 'block';
+    return;
+  }
+  window.RufflePlayer = window.RufflePlayer || {};
+  window.RufflePlayer.config = {
+    autoplay: 'on',
+    unmuteOverlay: 'hidden',
+    contextMenu: true,
+    letterbox: 'on',
+    scale: 'showAll',
+    quality: 'high',
+    warnOnUnsupportedContent: false
+  };
+  window.addEventListener('load', function () {
+    var ruffle = window.RufflePlayer.newest();
+    var player = ruffle.createPlayer();
+    player.style.width = '100%';
+    player.style.height = '100%';
+    document.getElementById('stage').appendChild(player);
+    player.load(f).catch(function () {
+      document.getElementById('stage').style.display = 'none';
+      document.getElementById('err').style.display = 'block';
+    });
+  });
+})();
+</script>
+</body>
+</html>
