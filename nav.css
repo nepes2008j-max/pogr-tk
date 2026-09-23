@@ -5,7 +5,7 @@
   font:500 13px/1.25 Arial,Helvetica,sans-serif; text-align:left;
   color:#fff; text-decoration:none;
   background:linear-gradient(#3d8a8b,#2f6f70);
-  border:1px solid #255a5b; border-left:4px solid #255a5b; border-radius:3px;
+  border:1px solid #255a5b; border-radius:3px;
   transition:background .12s,border-color .12s;
 }
 a{text-decoration:none}
@@ -17,14 +17,14 @@ a:focus-visible>.nb{ outline:2px solid #ffd24a; outline-offset:2px; }
 .sect{ font-weight:700; }
 .sect.on{
   background:linear-gradient(#f2f7f7,#dfeceb); color:#14413f;
-  border-color:#b7d2d0; border-left-color:#ffb020;
+  border-color:#b7d2d0; box-shadow:inset 2px 0 0 #ffb020;
 }
 a:hover>.sect.on{ background:linear-gradient(#fff,#eaf4f3); }
 
 /* 2-nji dereje — kiçi bölümler */
 .branch{
   margin-left:14px; min-height:26px; font-size:12.5px; font-weight:600;
-  background:linear-gradient(#57918f,#446f6e); border-left-color:#7fb3b0;
+  background:linear-gradient(#57918f,#446f6e);
 }
 .branch::before{ content:"▸"; margin-right:7px; opacity:.75; }
 
@@ -32,14 +32,14 @@ a:hover>.sect.on{ background:linear-gradient(#fff,#eaf4f3); }
 .leaf{
   margin-left:28px; min-height:24px; padding:4px 10px;
   font-size:12.5px; font-weight:400; color:#eaf6f5;
-  background:#3c6f6e; border-color:#2d5756; border-left-color:#8fc6c3;
+  background:#3c6f6e; border-color:#2d5756;
 }
 a:hover>.leaf{ background:#4b8482; color:#fff; }
 a:active>.leaf{ background:#345f5e; }
 
 .branch.on{
   background:linear-gradient(#eaf4f3,#d6e8e7); color:#14413f;
-  border-color:#a9c9c7; border-left-color:#ffb020;
+  border-color:#a9c9c7; box-shadow:inset 2px 0 0 #ffb020;
 }
 .branch.on::before{ content:"▾"; opacity:1; }
 a:hover>.branch.on{ background:linear-gradient(#fff,#e3efee); }
