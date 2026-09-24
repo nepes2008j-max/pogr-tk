@@ -64,3 +64,9 @@ RUS DILINDE GALAN ZATLAR (bilkastlaýyn)
    üýtgedilmedi.
 6. 5/1/2/ bukjasy («Wideomateriallar» bölümi) asyl diskde hem ýok —
    şol bäş düwmäniň suraty we sahypalary asyl nusgada hem kem.
+
+DIL ÇALŞYGY
+-----------
+Nawigasiýanyň ýokarsyndaky TM / RU düwmeleri bilen türkmen we asyl
+rus nusgasynyň arasynda geçmek bolýar. Rus nusgasy ru/ bukjasynda,
+asyl görnüşinde (windows-1251, asyl düwmeler) saklanýar.
