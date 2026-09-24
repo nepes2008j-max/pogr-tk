@@ -44,3 +44,8 @@ a:active>.leaf{ background:#345f5e; }
 }
 .branch.on::before{ content:"▾"; opacity:1; }
 a:hover>.branch.on{ background:linear-gradient(#fff,#e3efee); }
+
+.nbp{margin:0}
+.branch{cursor:default}
+.leaf.off{opacity:.45;cursor:not-allowed}
+.leaf.off::after{content:" — ýok";font-size:11px;opacity:.8}
