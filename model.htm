@@ -13,6 +13,7 @@
   #bar a:hover{text-decoration:underline}
   #name{color:#cfeaea}
   #stage{position:absolute;top:44px;left:0;right:0;bottom:0}
+  #stage>*{display:block}   /* Ruffle-iň elementi inline — aşakda 4px boşluk galdyrýar */
   #err{padding:24px;font-size:15px;line-height:1.5;max-width:760px}
   #err code{background:#062020;padding:2px 6px;border-radius:3px}
 </style>
@@ -35,7 +36,19 @@
     return m ? decodeURIComponent(m[1].replace(/\+/g, ' ')) : null;
   }
   var f = qp('f');
-  if (!f) { document.getElementById('name').textContent = ' — faýl görkezilmedi'; return; }
+  var ru = /^ru\//.test(f || '');
+  var T = ru
+    ? {back:'\u25C0 \u041D\u0430\u0437\u0430\u0434', none:' \u2014 \u0444\u0430\u0439\u043B \u043D\u0435 \u0443\u043A\u0430\u0437\u0430\u043D',
+       t1:'\u041C\u043E\u0434\u0435\u043B\u044C \u043D\u0435 \u043E\u0442\u043A\u0440\u044B\u043B\u0430\u0441\u044C.',
+       t2:'Flash-\u043C\u043E\u0434\u0435\u043B\u0438 \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442 \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u0440\u0438 \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u0438 \u0447\u0435\u0440\u0435\u0437 \u043B\u043E\u043A\u0430\u043B\u044C\u043D\u044B\u0439 \u0432\u0435\u0431-\u0441\u0435\u0440\u0432\u0435\u0440. \u0417\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u0435 \u0444\u0430\u0439\u043B '}
+    : null;
+  if (T) {
+    document.querySelector('#bar a').innerHTML = T.back;
+    var ps = document.querySelectorAll('#err p');
+    ps[0].innerHTML = '<b>' + T.t1 + '</b>';
+    ps[1].innerHTML = T.t2 + '<code>BASLAT.sh</code> / <code>BASLAT.bat</code>.';
+  }
+  if (!f) { document.getElementById('name').textContent = T ? T.none : ' — faýl görkezilmedi'; return; }
   var short = f.split('/').pop();
   document.getElementById('name').textContent = ' — ' + decodeURIComponent(short);
   document.title = decodeURIComponent(short);
