@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /* Nawigasiýa — suratsyz, CSS bilen */
 .nb{
-  display:flex; align-items:center; box-sizing:border-box;
+  display:flex; align-items:center; justify-content:center; box-sizing:border-box;
   min-height:30px; margin:0 0 4px; padding:5px 10px;
-  font:500 13px/1.25 Arial,Helvetica,sans-serif; text-align:left;
+  font:500 13px/1.25 Arial,Helvetica,sans-serif; text-align:center;
   color:#fff; text-decoration:none;
   background:linear-gradient(#2f6f70,#276061);
   border:1px solid #255a5b; border-radius:3px;
