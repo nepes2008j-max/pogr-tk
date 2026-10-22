@@ -70,3 +70,16 @@ DIL ÇALŞYGY
 Nawigasiýanyň ýokarsyndaky TM / RU düwmeleri bilen türkmen we asyl
 rus nusgasynyň arasynda geçmek bolýar. Rus nusgasy ru/ bukjasynda,
 asyl görnüşinde (windows-1251, asyl düwmeler) saklanýar.
+
+WINDOWS-DE AÇMAK
+----------------
+Diskdäki .exe faýllary 1990-njy ýyllaryň Borland kompilýatory bilen
+ýygnalan. Olaryň PE sözbaşysynda "iň pes OS wersiýasy = 1.0" diýlip
+durdy, şonuň üçin Windows 10/11 olary işletmän:
+   "This app can't run on your PC... check with the software publisher"
+diýip ýazýardy. Sözbaşydaky şol san 4.0-a düzedildi (kod degilmedi),
+indi olar işleýär: start.exe, 5/1/3/1/1.exe, 2.exe we rus nusgadaky
+deňleri.
+
+BASLAT.bat Python tapmasa, indi diski adaty görnüşde açýar we Python
+nireden alyp boljagyny ýazýar (öňürti diňe ýalňyşlyk berýärdi).
