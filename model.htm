@@ -65,7 +65,8 @@
     contextMenu: true,
     letterbox: 'on',
     scale: 'showAll',
-    quality: 'high',
+    quality: (navigator.deviceMemory && navigator.deviceMemory <= 4) ? 'low' : 'high',
+    maxExecutionDuration: 15,
     warnOnUnsupportedContent: false
   };
   window.addEventListener('load', function () {
