@@ -1,6 +1,6 @@
 <xml xmlns:o="urn:schemas-microsoft-com:office:office">
  <o:MainFile HRef="../12.htm"/>
- <o:File HRef="image001.png"/>
+ <o:File HRef="../../1/12.files/image001.png"/>
  <o:File HRef="image002.jpg"/>
  <o:File HRef="image003.png"/>
  <o:File HRef="image004.jpg"/>
@@ -8,9 +8,9 @@
  <o:File HRef="image006.jpg"/>
  <o:File HRef="image007.png"/>
  <o:File HRef="image008.jpg"/>
- <o:File HRef="image009.png"/>
+ <o:File HRef="../../1/12.files/image009.png"/>
  <o:File HRef="image010.jpg"/>
- <o:File HRef="image011.png"/>
+ <o:File HRef="../../1/12.files/image011.png"/>
  <o:File HRef="image012.jpg"/>
  <o:File HRef="filelist.xml"/>
 </xml>
